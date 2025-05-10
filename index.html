@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Switch</title>
+
+  <link href="style.css" rel="stylesheet" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+</head>
+<body>
+  <div class="dark-background text-center min-vh-100 d-flex flex-column justify-content-center align-items-center p-3">
+    
+    <div class="mb-3">
+      <img
+        src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png"
+        class="bulb-image img-fluid"
+        id="bulbimg"
+        alt="bulb"
+      />
+    </div>
+    
+    <div class="mb-3">
+      <img
+        src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png"
+        class="cat-image img-fluid"
+        id="catimg"
+        alt="cat"
+      />
+    </div>
+    
+    <div class="switch-board text-center">
+      <h1 class="switch-status" id="switchstats">Switched On</h1>
+      <div class="d-flex justify-content-center">
+        <button onclick="switchOff()" id="offswitch" class="off-switch mr-2">OFF</button>
+        <button onclick="switchOn()" id="onswitch" class="on-switch">ON</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
